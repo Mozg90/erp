@@ -9,12 +9,11 @@
 
     <TextView
         android:id="@+id/textView2"
-        android:layout_width="0dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="24dp"
         android:layout_marginTop="48dp"
         android:layout_marginEnd="24dp"
-        android:lines="6"
         android:text="Эффективность клинико-психологического сопровождения оценивается по достоверно значимым
 психологическим предикторам в математической
 регрессионной модели, дающим значения
