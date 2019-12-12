@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#00ACEF</color>
+    <color name="colorPrimaryDark">#00ACEF</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="com_facebook_blue">#00ACEF</color>
+</resources>
