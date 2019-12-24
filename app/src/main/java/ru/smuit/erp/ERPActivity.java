@@ -61,21 +61,21 @@ public class ERPActivity extends AppCompatActivity {
                     emtyField = true;
                 }
                 if (!emtyField) {
-                    float erp = Float.parseFloat(editTextD.getText().toString()) * 0.061f -
-                            Float.parseFloat(editTextSy.getText().toString()) * 0.11f +
-                            Float.parseFloat(editTextDadj.getText().toString()) * 0.034f -
+                    float erp = Float.parseFloat(editTextD.getText().toString()) * 0.061f +
+                            Float.parseFloat(editTextSy.getText().toString()) * 0.034f -
+                            Float.parseFloat(editTextDadj.getText().toString()) * 0.11f -
                             Float.parseFloat(editTextG.getText().toString()) * 0.151f +
                             Float.parseFloat(editTextF.getText().toString()) * 0.101f +
                             0.584f;
-                    builder.setTitle("Результат:" + String.valueOf(erp));
-                    if (erp > 1.0f) {
-                        if (erp > 1.5f) {
-                            builder.setMessage("При ЭРП > 1,5 Клинико-психологическое сопровождение пройдет успешно");
+                    builder.setTitle("Результат: " + String.format("%.2f", erp));
+                    if (erp >= 0.7f) {
+                        if (erp > 1.0f) {
+                            builder.setMessage("При ЭРП > 1 - положительный прогноз сохранения годовой ремисссии.");
                         } else {
-                            builder.setMessage("При 1 < ЭРП < 1,5 Будет наблюдаться положительная тенденция в проведении клинико-психологического сопровождения");
+                            builder.setMessage("При 0.7 < ЭРП < 1 - неустойчивый прогноз сохранения годовой ремисссии.");
                         }
                     } else {
-                        builder.setMessage("При ЭРП < 1 Клинико-психологическое сопровождение будет не эффективно");
+                        builder.setMessage("При ЭРП < 0.7 - отрицательный прогноз, высокая вероятность срыва.");
                     }
                     AlertDialog alert = builder.create();
                     alert.show();

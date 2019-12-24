@@ -14,7 +14,7 @@
         android:layout_marginEnd="75dp"
         android:layout_marginBottom="32dp"
         android:background="@drawable/button_background"
-        android:text="Рассчитать ЭРП"
+        android:text="Рассчитать ЭПР"
         android:textColor="@android:color/white"
         android:theme="@style/Facebook.Button"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -31,7 +31,7 @@
 
         android:text="Эффективность клинико-психологического
 сопровождения можно вычислить используя
-следующую регрессионную модель:\nЭРП = (D x 0.061) - (Sy x 0.110) + (DАdj x 0.034) -\n\t\t\t\t\t\t(G x 0.151) + (F x 0.101) + 0.584)"
+следующую регрессионную модель:\nЭПР = (D x 0.061) + (Sy x 0.034) - (DАdj x 0.110) -\n\t\t\t\t\t\t(G x 0.151) + (F x 0.101) + 0.584)"
         android:textColor="#000000"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -43,7 +43,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
-        android:text="D - эмоциональный\nконтроль в тесте Роршаха"
+        android:text="D - толерантность к\nстрессу по тесту Роршаха"
         android:textColor="#000000"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView3" />
@@ -87,7 +87,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
-        android:text=" F - «сдержанность-экспрессивность»\nпо тесту Р. Кеттел"
+        android:text="F - «сдержанность-экспрессивность»\nпо тесту Р. Кеттелла"
         android:textColor="#000000"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView7" />
@@ -98,7 +98,7 @@
         android:layout_height="wrap_content"
         android:layout_marginEnd="16dp"
         android:ems="10"
-        android:inputType="number"
+        android:inputType="numberSigned"
         android:textAlignment="center"
         app:layout_constraintBottom_toBottomOf="@+id/textView4"
         app:layout_constraintEnd_toEndOf="parent"
@@ -123,7 +123,7 @@
         android:layout_height="wrap_content"
         android:layout_marginEnd="16dp"
         android:ems="10"
-        android:inputType="number"
+        android:inputType="numberSigned"
         android:textAlignment="center"
         app:layout_constraintBottom_toBottomOf="@+id/textView6"
         app:layout_constraintEnd_toEndOf="parent"
@@ -135,7 +135,7 @@
         android:layout_height="wrap_content"
         android:layout_marginEnd="16dp"
         android:ems="10"
-        android:inputType="number"
+        android:inputType="numberDecimal"
         android:textAlignment="center"
         app:layout_constraintBottom_toBottomOf="@+id/textView7"
         app:layout_constraintEnd_toEndOf="parent"
